@@ -6,12 +6,13 @@
 }
 
 @font-face {
-  font-family: 'Gemunu Libre', sans-serif;;
+  font-family: 'Gemunu Libre', sans-serif;
   src: url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
 }
 
 /* Main Styling */
-html, body {
+html,
+body {
   font-family: 'Gemunu Libre', sans-serif;
   line-height: 1.7em;
   background: #333;
@@ -23,7 +24,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   padding-bottom: 20px;
 }
 
@@ -41,7 +44,7 @@ p {
 
 .container {
   margin: auto;
-  max-width: 1100px;
+  max-width: 2000px;
   overflow: auto;
   padding: 0 20px;
 }
@@ -97,12 +100,26 @@ p {
 
 /* Showcase */
 #showcase {
-  height: 635px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #showcase .showcase-content {
   text-align: center;
-  padding-top: 170px;
+}
+
+#showcase .showcase-content .gif-obi {
+  width: 50%;
+  transform: scale(0);
+  animation: fadein forwards 2s;
+}
+
+@keyframes fadein {
+  to {
+    transform: scale(1);
+  }
 }
 
 /* Contact */
