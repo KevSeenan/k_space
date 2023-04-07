@@ -122,6 +122,27 @@ p {
   }
 }
 
+/* Photography */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 600px;
+  grid-gap: 1rem;
+  margin-left: 1rem;
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+}
+
+.img:hover {
+  transform: scale(2);
+}
+
+/* Games */
+
 /* Contact */
 #contact-info a i {
   color: #fff;
@@ -133,4 +154,7 @@ p {
   background: #444;
   color: #fff;
   padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
